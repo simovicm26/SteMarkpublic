@@ -1,0 +1,415 @@
+body{
+  width:100vw;
+  margin:0;
+  padding:0;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+hr{
+  border:1px solid #66F90B;
+  margin:0;
+  width:140%;
+}
+h2{
+  margin:0;
+  font-size:2.5rem;
+  color:#3E3E3E;
+  font-weight: 500;
+}
+h3{
+  font-weight: bolder;
+  color: #3F3F3F;
+}
+p{
+  font-size:1.1rem;
+  color: #595959;
+}
+/*Navigation Bar*/
+nav{
+  position: fixed;
+  width:100vw;
+  z-index: 2;
+  top:0;
+}
+.nav-link {
+  font-weight: 400;
+  color:#464646;
+  font-size: 1rem;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:#FBFBFB;
+}
+.brand-logo{
+  margin: 5px 0 0 43px;
+}
+.navbar1{
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #3F3F3F;
+}
+.nav-facebook{
+  margin-left: 55px;
+}
+.nav-contact{
+  margin-right: 105px;
+  color: #FBFBFB;
+  display: flex;
+  justify-content: space-around;
+}
+.icon{
+  color: #FBFBFB;
+  margin: 0 8px 0 8px;
+}
+.phonenumber{
+  margin-right: 100px;
+}
+.nav-link{
+  margin:0 75px;
+}
+.nav-link:hover{
+  color:#28FF81;
+}
+.fa-facebook:hover{
+  color: #28FF81;
+}
+.email:hover{
+  color: #28FF81;
+}
+.phonenumber:hover{
+  color: #28FF81;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
+/*Dropdown Menu*/
+.dropdown{
+  position: relative;
+}
+#dropdown-content{
+  position:absolute;
+  background-color:#FBFBFB;
+  right:-35px;
+  display: none;
+}
+#dropdown-content ul{
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#dropdown-content li{
+  padding:10px 20px;
+}
+#dropdown-content li a{
+  color:#464646;
+}
+#dropdown-content li a:hover{
+  text-decoration: none;
+}
+#dropdown-content li:hover{
+  background-color: #EDFFEC;
+}
+.dropdownbtn{
+  border: none;
+  padding:10px;
+  background-color:#FBFBFB;
+}
+.dropdown:hover #dropdown-content{
+  display: block;
+}
+.dropdown:hover .dropdownbtn{
+  color:#28FF81;
+}
+.dropdown:hover .triangle{
+  fill:#28FF81;
+}
+/*Main Section*/
+#main{
+  margin-top: 120px;
+}
+.main-images{
+  width:100vw;
+  height:720px;
+  background-image: url(images/lamele.jpg);
+}
+.slider-block{
+  width:45vw;
+  background-color:rgba(58, 58, 58, 0.7);
+  height:100%;
+}
+.main-title{
+  color:white;
+  position:relative;
+  left:75px;
+  top:75px;
+  width:60%;
+  line-height:1.5;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.main-subtitle{
+  color:white;
+  position:relative;
+  left:75px;
+  top:125px;
+  width:50%;
+  font-weight:400;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+.btn{
+  font-size: 1.5rem;
+  color:#3F3F3F;
+  position: relative;
+  width: 300px;
+  background-color: white;
+  left:75px;
+  bottom:-230px;
+  padding:15px 0;
+  border-radius:10px;
+  box-shadow:0 0 20px black;
+}
+.btn:hover{
+  background-color:#EDFFEC;
+}
+.triangle2{
+  margin-left: 10px;
+}
+/*Zasto Nas Section*/
+#zastoizabratinas{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.zastonas-text{
+  display: inline-block;
+  margin:75px 0 0 75px;
+}
+.karakteristike-main1{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin:100px 75px 75px 75px;
+}
+.karakteristike-main2{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  margin:75px 75px 0 75px;
+}
+.karakteristike-child{
+  display: flex;
+  flex-direction:row;
+  width:600px;
+  height:300px;
+}
+.karakteristike-image{
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+}
+.kvalitet{
+  margin-left: 120px;
+}
+.dobra-organizacija{
+  margin-left: 120px;
+}
+.gear2{
+  position:absolute;
+  top:100px;
+  width:230px;
+  height: 230px;
+  right:50px;
+  opacity: 0.4;
+  transform:rotate(26.22deg);
+}
+.gear1{
+  position: absolute;
+  width:300px;
+  height: 300px;
+  opacity: 0.4;
+  top:500px;
+  right:-150px;
+}
+/*Proizvodi Section*/
+#proizvodi{
+  width: 100vw;
+  background-color: #EDFFEC;
+  padding-bottom: 100px;
+}
+.proizvod{
+  width: 400px;
+  height:400px;
+  background-color: white;
+  margin:75px 75px 0 75px;
+  box-shadow: 0 0 10px black;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  transition: width 1s,height 1s;
+}
+.proizvod:hover{
+  width:500px;
+  height:500px;
+}
+.prvi-red{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.drugi-red{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.proizvodi-text{
+  display: inline-block;
+  margin:75px 0 75px 75px;
+  color:#434343;
+}
+.gears{
+  position: absolute;
+  top:2100px;
+  width: 700px;
+  height:700px;
+  transform: rotate(-105deg);
+  left:-200px;
+}
+.gear3{
+  position: absolute;
+  opacity: 0.4;
+  top:1600px;
+  right:300px;
+}
+.proizvod-image{
+  width:100%;
+  height:60%;
+}
+.proizvod h3{
+  margin-top: 30px;
+}
+
+/*Reference Container*/
+.slider-image{
+  display:inline-block;
+  position: relative;
+  margin:50px 100px;
+  animation: myMove 15s infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+.slider-container:hover .slider-image{
+  animation-play-state:running;
+}
+@keyframes myMove {
+  from{right:0;}
+  to  {right:1800px;}
+}
+.slider-container{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+/*Kontakt Container*/
+#contact{
+  position: relative;
+}
+form{
+  display:inline-block;
+  margin:75px 75px 75px 150px;
+  width: 50%;
+}
+.kontakt-hr{
+  width:100vw;
+}
+.kontakt-text{
+  display: inline-block;
+  margin:75px 0 0 150px;
+  color:#434343;
+}
+.imeiprezime-form{
+  width: 30%;
+  height:50px;
+  position:relative;
+  overflow: hidden;
+  margin-bottom: 75px;
+}
+.imeiprezime-form input{
+  width:100%;
+  height:100%;
+  padding-top: 10px;
+  color: #595959;
+  border:none;
+  outline: 0;
+}
+.imeiprezime-form label{
+  position: absolute;
+  bottom:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+  font-size: 1.2rem;
+}
+.imeiprezime-form label::after {
+  content:"";
+  position: absolute;
+  left:0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #66F90B;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+.content-imeiprezime{
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  transition: all 0.4s ease;
+}
+
+.imeiprezime-form input:focus + .label-imeiprezime .content-imeiprezime, .imeiprezime-form input:not(:placeholder-shown) + .label-imeiprezime .content-imeiprezime{
+  transform: translateY(-100%);
+  font-size: 16px;
+  color:#66F90B;
+}
+.imeiprezime-form input:focus + .label-imeiprezime::after,
+.imeiprezime-form input:not(:placeholder-shown) + .label-imeiprezime::after{
+  transform: translateX(0%);
+}
+textarea{
+  outline-color: #66F90B;
+  resize: none;
+}
+.submit{
+  margin-top: 75px;
+  height:50px;
+  width:200px;
+  border:none;
+  box-shadow: 0 0 5px grey;
+}
+.submit:hover{
+  background-color:#EDFFEC;
+  outline: 0;
+  border:none;
+}
+.envelope-image{
+  position: absolute;
+  top:250px;
+  right: 300px;
+}
+.poruka-form{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+/*Footer Section*/
